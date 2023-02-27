@@ -1,33 +1,47 @@
-import java.util.*;
+import java.io.BufferedReader;
+import java.io.BufferedWriter;
+import java.io.IOException;
+import java.io.InputStreamReader;
+import java.io.OutputStreamWriter;
+import java.util.StringTokenizer;
+
 public class Main {
-	public static void main(String[] args) {
-		Scanner sc = new Scanner(System.in);
-		int n = sc.nextInt(); // 자연수
-		int k = sc.nextInt(); // k 번째로 작은 것
-		int cnt = 0;
-		int index = 0;
+
+	public static void main(String[] args) throws NumberFormatException, IOException {
+		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+		BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
 		
-		for(int i = 1; i <= n; i++) {
-			index = n % i;
-			if(index == 0) {
+		StringBuilder sb = new StringBuilder();
+
+		
+		StringTokenizer st = new StringTokenizer(br.readLine());
+		int N = Integer.parseInt(st.nextToken());
+		int K = Integer.parseInt(st.nextToken());
+
+		int cnt = 0;
+		int num = 0;
+		for (int i = 1; i <= N; i++) {
+			if (N % i == 0) {
+				num = i;
 				cnt++;
-			}	
-			if(cnt == k) {
-				System.out.println(i);
+			}
+
+			if (cnt == K)
 				break;
-				
-			}
-			
-			
-				
-			}
-		if(cnt < k) {
-			System.out.println(0);
-	
+
 		}
-				
-	
+		if(cnt < K) {
+			sb.append(0);
+		}
+		else {
+			sb.append(num);
+		}
+		
+		bw.write(sb.toString());
+		bw.flush();
+		bw.close();
+		
+
+	}
 
 }
-}
-
