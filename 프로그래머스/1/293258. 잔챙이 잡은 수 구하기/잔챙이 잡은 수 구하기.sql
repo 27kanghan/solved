@@ -1,4 +1,4 @@
 -- 코드를 작성해주세요
 select count(*) as FISH_COUNT
 from fish_info
-where length is null or length <= 10
+where length is null
