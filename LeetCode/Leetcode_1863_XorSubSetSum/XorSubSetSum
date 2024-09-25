@@ -5,6 +5,7 @@ public class LeetCode_1863 {
 	public int subsetXORSum(int[] nums) {
 		return xor(nums, 0, 0);
 	}
+//
 
 	private int xor(int[] nums, int cur, int i) {
 		if (cur == nums.length)
