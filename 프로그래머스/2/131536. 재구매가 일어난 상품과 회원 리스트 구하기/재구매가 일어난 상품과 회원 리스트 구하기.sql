@@ -1,7 +1,7 @@
 -- 코드를 입력하세요
-SELECT user_id, product_id
-# select *
-from online_sale
-group by user_id, product_id
-having count(sales_date) >= 2
-order by user_id, product_id desc
+SELECT USER_ID, PRODUCT_ID
+FROM ONLINE_SALE
+# WHERE SALES_AMOUNT >= 2
+GROUP BY USER_ID, PRODUCT_ID
+HAVING COUNT(PRODUCT_ID) >= 2
+ORDER BY USER_ID, PRODUCT_ID DESC
