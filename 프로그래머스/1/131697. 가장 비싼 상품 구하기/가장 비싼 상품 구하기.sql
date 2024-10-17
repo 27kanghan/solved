@@ -1,3 +1,3 @@
 -- 코드를 입력하세요
-SELECT max(price) as mas_price
-from product
+SELECT MAX(PRICE) AS MAX_PRICE
+FROM PRODUCT
