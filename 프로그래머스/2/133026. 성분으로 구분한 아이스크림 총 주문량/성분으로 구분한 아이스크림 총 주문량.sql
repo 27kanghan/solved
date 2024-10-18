@@ -1,7 +1,6 @@
--- 코드를 입력하세요
-SELECT INGREDIENT_TYPE, sum(total_order)
-from first_half
-join icecream_info
-using (flavor)
-group by INGREDIENT_TYPE
-order by total_order
+SELECT INGREDIENT_TYPE, SUM(TOTAL_ORDER) AS TOTAL_ORDER
+FROM FIRST_HALF
+JOIN ICECREAM_INFO
+USING (FLAVOR)
+GROUP BY INGREDIENT_TYPE
+ORDER BY TOTAL_ORDER ASC
