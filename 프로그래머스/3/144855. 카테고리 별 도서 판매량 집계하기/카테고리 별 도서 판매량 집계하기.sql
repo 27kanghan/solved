@@ -1,7 +1,9 @@
-select book.category, sum(book_sales.sales) as total_sale
-from book
-join book_sales
-on book.book_id = book_sales.book_id
-where DATE_FORMAT(BOOK_SALES.SALES_DATE,"%Y-%m-%d") LIKE "2022-01%"
-group by book.category 
-order by book.category
+-- 카테고립 도서 판매량
+-- 2022년 1월.
+SELECT CATEGORY, SUM(SALES) 'TOTLA_SALES'
+FROM BOOK 
+JOIN BOOK_SALES
+USING (BOOK_ID)
+WHERE DATE_FORMAT(SALES_DATE, '%Y-%m') = '2022-01'
+GROUP BY CATEGORY
+ORDER BY CATEGORY
