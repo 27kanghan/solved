@@ -1,4 +1,3 @@
--- 코드를 입력하세요
 SELECT a.animal_id, a.aNIMAL_TYPE, a.name
 from animal_ins a
 join animal_outs b
