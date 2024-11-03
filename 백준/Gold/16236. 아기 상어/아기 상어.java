@@ -24,6 +24,7 @@ public class Main {
 			this.time = time;
 		}
 
+		//
 		@Override
 		public int compareTo(Fish o) {
 			if (this.time == o.time) {
