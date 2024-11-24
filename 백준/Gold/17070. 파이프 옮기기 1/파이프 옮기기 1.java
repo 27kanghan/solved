@@ -6,6 +6,7 @@ import java.io.OutputStreamWriter;
 import java.util.StringTokenizer;
 
 public class Main {
+	
 
 	static int map[][];
 	static int N;
