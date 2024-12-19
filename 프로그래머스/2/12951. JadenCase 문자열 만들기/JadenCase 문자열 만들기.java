@@ -5,7 +5,6 @@ class Solution {
         
         //97 ~ 122
         //65 ~ 90
-        
         String answer = "";
         
         String str[] = s.toLowerCase().split("");
