@@ -17,7 +17,6 @@ public class Main {
 
 		V = Integer.parseInt(st.nextToken());
 		E = Integer.parseInt(st.nextToken());
-
 		list = new ArrayList<>();
 
 		for (int i = 0; i < V; i++) {
