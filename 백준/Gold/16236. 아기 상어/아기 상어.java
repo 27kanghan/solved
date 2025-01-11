@@ -16,7 +16,6 @@ public class Main {
 		int x;
 		int y;
 		int time;
-
 		public Fish(int x, int y, int time) {
 			super();
 			this.x = x;
