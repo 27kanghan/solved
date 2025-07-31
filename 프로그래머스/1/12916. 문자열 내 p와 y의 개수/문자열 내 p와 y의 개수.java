@@ -8,6 +8,7 @@ class Solution {
         
         s = s.toLowerCase();
         
+        
         for(int i = 0; i < s.length(); i++){
             if(s.charAt(i) == 'p') pCnt++;
             else if(s.charAt(i) == 'y') yCnt++;
