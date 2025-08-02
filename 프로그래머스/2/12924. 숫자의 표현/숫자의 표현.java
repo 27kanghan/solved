@@ -3,7 +3,6 @@ class Solution {
         int answer = 0;
 
         
-        
         for(int i = 1; i <= n; i++){
             int num = i;
             int sum = 0;
