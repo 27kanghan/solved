@@ -12,6 +12,7 @@ class Solution {
         if(str[0].charAt(0) >= 97 && str[0].charAt(0) <= 122){
             str[0] = str[0].toUpperCase();
         }
+
         
         answer += str[0];
          
