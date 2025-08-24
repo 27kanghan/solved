@@ -15,7 +15,6 @@ public class Solution {
 		int c;
 		int cnt;
 		int dir;
-
 		public Point(int r, int c, int cnt, int dir) {
 			super();
 			this.r = r;
